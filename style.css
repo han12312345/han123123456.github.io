@@ -1,0 +1,35 @@
+body {
+    background: hsl(211, 32%, 33%);
+    display: flex;
+    justify-content: center;
+}
+
+#spider-container {
+    width: 90vh;
+    display: grid;
+    place-items: center;
+    grid-template-areas:
+        "s1 . ."
+        ". s2 ."
+        ". . s3";
+}
+
+#spider1,
+#spider2,
+#spider3 {
+    grid-area: auto;
+    width: 100%;
+    height: auto;
+}
+
+#spider1 {
+    grid-area: s1;
+}
+
+#spider2 {
+    grid-area: s2;
+}
+
+#spider3 {
+    grid-area: s3;
+}
